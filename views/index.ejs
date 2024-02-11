@@ -1,172 +1,273 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://kit.fontawesome.com/d6c9a3e279.js" crossorigin="anonymous"></script>
-    <link href="/css/output.css" rel="stylesheet">
-</head>
-<body>
-    <div class="w-full">
-        <div class="flex">
-            <div class="sticky top-0 w-1/5 h-screen py-10 px-10">
-                <div class="w-full flex flex-col justify-center items-center">
-                    <div class="bg-cover bg-center bg-no-repeat bg-center w-40 h-40 rounded-full border-4 mb-4 border-gray-300" style="background-image: url(/img/arjay.jpg);"></div>
-                    <h1 class="text-2xl font-bold text-indigo-950">Arjay Mariñas</h1>
-                    <h2 class="text-sm font-medium text-amber-600">Designer / Developer</h2>
-                </div>
-                <div class="w-full py-12">
-                    <ul>
-                        <li class="pb-6 first:pt-0 last:pb-0 group">
-                            <a href="#" class="flex justify-between text-amber-600 group-hover:text-amber-600">
-                                <div class="flex gap-2 items-center">
-                                    <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">work</span>
-                                    <span class="font-sans text-xl font-medium">Work</span>
-                                </div>
-                                <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">chevron_right</span>
-                            </a>
-                        </li>   
-                        <li class="pb-6 first:pt-0 last:pb-0 group">
-                            <a href="#" class="flex justify-between text-indigo-950 group-hover:text-amber-600">
-                                <div class="flex gap-2 items-center">
-                                    <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">settings</span>
-                                    <span class="font-sans text-xl font-medium">My Process</span>
-                                </div>
-                                <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">chevron_right</span>
-                            </a>
-                        </li>
-                        <li class="pb-6 first:pt-0 last:pb-0 group">
-                            <a href="#" class="flex justify-between text-indigo-950 group-hover:text-amber-600">
-                                <div class="flex gap-2 items-center">
-                                    <span class="material-symbols-outlined">sentiment_very_satisfied</span>
-                                    <span class="font-sans text-xl font-medium">About</span>
-                                </div>
-                                <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">chevron_right</span>
-                            </a>
-                        </li>   
-                        <li class="pb-6 first:pt-0 last:pb-0 group">
-                            <a href="#" class="flex justify-between text-indigo-950 group-hover:text-amber-600">
-                                <div class="flex gap-2 items-center">
-                                    <span class="material-symbols-outlined">alternate_email</span>
-                                    <span class="font-sans text-xl font-medium">Contact</span>
-                                </div>
-                                <span class="material-symbols-outlined" style="font-size: 24px; font-weight: 400;">chevron_right</span>
-                            </a>
-                        </li>                    
-                    </ul>
-                </div>
 
-                <div class="w-full text-indigo-950">
-                    <h3 class="font-bold text-sm uppercase mb-2">Links / Socials</h3>
-                    <ul class="flex flex-row gap-2">
-                        <li><i class="fa-brands fa-square-facebook text-2xl text-gray-500"></i></li>
-                        <li><i class="fa-brands fa-linkedin text-2xl text-gray-500"></i></li>
-                        <li><i class="fa-brands fa-square-github text-2xl text-gray-500"></i></li>
-                        <li><i class="fa-brands fa-square-behance text-2xl text-gray-500"></i></li>
-                        <li><i class="fa-brands fa-square-dribbble text-2xl text-gray-500"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="overflow-y-auto w-4/5 bg-slate-100 p-10 flex flex-col gap-8">
+<%- include("partials/header.ejs") %>
+
+            <div class="col-span-5 xl:col-span-4 overflow-y-auto bg-slate-100 p-10 flex flex-col gap-8">
+
                 <div class="w-full border-4 px-6 py-6 rounded-lg">
                     <h1 class="text-2xl font-bold mb-2 text-indigo-950">About <span class="text-amber-400">Me</span></h1>
                     <p class="font-medium text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
-                <div class="w-full">
-                    <div class="grid grid-cols-3 gap-4">
-                        <a href="#">
-                            <div class="border-2 rounded-lg bg-gray-200">
-                                <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/Error\ 404\ Page\ Design.png);"></div>
-                                <div class="px-4 py-4">
-                                    <div class="flex justify-between items-center text-indigo-950 mb-3">
-                                        <h2 class="text-md font-bold">404 Page</h2>
-                                        <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
-                                    </div> 
-                                    <div class="flex gap-4">
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
 
-                        <a href="#">
-                            <div class="border-2 rounded-lg bg-gray-200">
-                                <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/Error\ 404\ Page\ Design.png);"></div>
-                                <div class="px-4 py-4">
-                                    <div class="flex justify-between items-center text-indigo-950 mb-3">
-                                        <h2 class="text-md font-bold">404 Page</h2>
-                                        <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
-                                    </div> 
-                                    <div class="flex gap-4">
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="border-2 rounded-lg bg-gray-200">
-                                <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/Error\ 404\ Page\ Design.png);"></div>
-                                <div class="px-4 py-4">
-                                    <div class="flex justify-between items-center text-indigo-950 mb-3">
-                                        <h2 class="text-md font-bold">404 Page</h2>
-                                        <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
-                                    </div> 
-                                    <div class="flex gap-4">
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="border-2 rounded-lg bg-gray-200">
-                                <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/Error\ 404\ Page\ Design.png);"></div>
-                                <div class="px-4 py-4">
-                                    <div class="flex justify-between items-center text-indigo-950 mb-3">
-                                        <h2 class="text-md font-bold">404 Page</h2>
-                                        <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
-                                    </div> 
-                                    <div class="flex gap-4">
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="border-2 rounded-lg bg-gray-200">
-                                <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/Error\ 404\ Page\ Design.png);"></div>
-                                <div class="px-4 py-4">
-                                    <div class="flex justify-between items-center text-indigo-950 mb-3">
-                                        <h2 class="text-md font-bold">404 Page</h2>
-                                        <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
-                                    </div> 
-                                    <div class="flex gap-4">
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
-                                        <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- <div class="grid grid-cols-2 gap-4 h-[20rem] rounded-lg">
+                    <div class="rounded-lg bg-cover bg-center" style="background-image: url(/img/works/adventour.png);"></div>
+                    <div class="bg-gray-200 rounded-lg">
 
                     </div>
+                </div> -->
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/adventour.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950">
+                                    <h2 class="text-md font-bold">Adventour</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #3</span>
+                                </div> 
+                                <div class="flex gap-4 my-3">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                                <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/404.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">404 Page</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #8</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/artisan-furniture.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Artisan</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #5</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Logo Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Mockup</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/calculator.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Simple Calculator</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #4</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/checkout.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Checkout Page</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #2</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/e-commerce.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Simple E-commerce</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #12</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/flash-message.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Flash Message</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #11</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/music-player.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Music Player</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #09</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/settings.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">User Settings</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #07</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/signup.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Sign Up Page</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #01</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/simple-portfolio.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Simple Portfolio</h2>
+                                    <span class="text-xs font-bold text-gray-500">Some text</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/social-share.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">Social Share</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #10</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Web page</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-60 bg-cover bg-center rounded-t-lg" style="background-image: url(/img/works/user-profile.png);"></div>
+                            <div class="px-4 py-4">
+                                <div class="flex justify-between items-center text-indigo-950 mb-3">
+                                    <h2 class="text-md font-bold">User Profile</h2>
+                                    <span class="text-xs font-bold text-gray-500">Daily UI #06</span>
+                                </div> 
+                                <div class="flex gap-4">
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">UI/UX Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">App Design</h3>
+                                    <h3 class="rounded-full bg-gray-300 text-[10px] px-2 text-gray-700 font-medium py-1">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
+
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-[24rem] bg-cover bg-center rounded-lg" style="background-image: url(/img/works/adventour.png);"></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-[24rem] bg-cover bg-center rounded-lg" style="background-image: url(/img/works/404.png);"></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-[24rem] bg-cover bg-center rounded-lg" style="background-image: url(/img/works/checkout.png);"></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="rounded-lg bg-gray-200">
+                            <div class="w-full h-[24rem] bg-cover bg-center rounded-lg" style="background-image: url(/img/works/signup.png);"></div>
+                        </div>
+                    </a>
+
+                </div>
+                
+
             </div>
-        </div>
-    </div>
-</body>
-</html>
+
+<%- include("partials/footer.ejs") %>
